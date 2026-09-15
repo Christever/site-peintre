@@ -1,0 +1,16 @@
+Usage	                  Couleur	           Hex
+Fond principal sombre	Anthracite	        #1C1917
+Couleur d'accent	    Terracotta	        #C2410C
+Fond clair	            Blanc cassé     	#FAFAF9
+Texte principal	        Gris très foncé  	#292524
+Texte secondaire	    Gris chaud	        #57534E
+Blanc	                                    #FFFFFF	
+
+
+Hero → anthracite
+Header → blanc
+Sections principales → blanc cassé
+Titres → anthracite
+Boutons principaux → terracotta
+Liens / éléments importants → terracotta
+Effets hover → terracotta légèrement plus foncé

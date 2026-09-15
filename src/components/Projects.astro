@@ -1,0 +1,96 @@
+---
+import photo01 from "@/assets/images/realisations/hero-peinture.webp"
+import photo02 from "@/assets/images/realisations/peinture_ext.webp"
+import photo3 from "@/assets/images/realisations/hero-papier.webp"
+---
+<section class="bg-[#FAFAF9] py-20">
+  <div class="mx-auto max-w-7xl px-8">
+    <div class="mx-auto max-w-2xl text-center">
+      <p class="text-sm font-semibold uppercase tracking-widest text-[#C2410C]">
+        Nos réalisations
+      </p>
+
+      <h2
+        class="mt-3 text-3xl font-bold tracking-tight text-[#1C1917] sm:text-4xl"
+      >
+        Quelques-uns de nos projets
+      </h2>
+
+      <p class="mt-4 text-lg leading-8 text-[#57534E]">
+        Découvrez quelques exemples de travaux réalisés par MS Peinture.
+      </p>
+    </div>
+
+    <div class="mt-12 grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+      <article
+        class="group overflow-hidden rounded-xl bg-white shadow-sm ring-1 ring-[#E7E5E4]"
+      >
+        <div class="flex aspect-4/3 items-center justify-center bg-[#E7E5E4]">
+          <!-- <span class="text-[#78716C]"> Photo à venir </span> -->
+           <img 
+           src={photo01.src} 
+           alt="Peinture intérieure réalisée par MS Peinture" 
+           class="h-full w-full object-cover transition duration-300 group-hover:scale-105" 
+           />
+        </div>
+
+        <div class="p-5">
+          <h3 class="font-semibold text-[#1C1917]">Peinture intérieure</h3>
+
+          <p class="mt-2 text-sm text-[#57534E]">
+            Rénovation et mise en peinture d'un intérieur.
+          </p>
+        </div>
+      </article>
+
+      <article
+        class="group overflow-hidden rounded-xl bg-white shadow-sm ring-1 ring-[#E7E5E4]"
+      >
+        <div class="flex aspect-4/3 items-center justify-center bg-[#E7E5E4]">
+          <img 
+            src={photo02.src} 
+            alt="Peinture exterieure réalisée par MS Peinture" 
+            class="h-full w-full object-cover transition duration-300 group-hover:scale-105"
+          />
+        </div>
+
+        <div class="p-5">
+          <h3 class="font-semibold text-[#1C1917]">Peinture extérieure</h3>
+
+          <p class="mt-2 text-sm text-[#57534E]">
+            Travaux de peinture et rénovation extérieure.
+          </p>
+        </div>
+      </article>
+
+      <article
+        class="group overflow-hidden rounded-xl bg-white shadow-sm ring-1 ring-[#E7E5E4]"
+      >
+        <div class="flex aspect-4/3 items-center justify-center bg-[#E7E5E4]">
+          <img 
+           src={photo3.src}
+           alt="Papier peint réalisée par MS Peinture" 
+           class="h-full w-full object-cover transition duration-300 group-hover:scale-105"
+          />
+        </div>
+
+        <div class="p-5">
+          <h3 class="font-semibold text-[#1C1917]">Papier peint</h3>
+
+          <p class="mt-2 text-sm text-[#57534E]">
+            Pose de papier peint et finition des murs.
+          </p>
+        </div>
+      </article>
+    </div>
+
+    <div class="mt-10 text-center">
+      <a
+        href="/realisations"
+        class="inline-flex rounded-lg bg-[#C2410C] px-6 py-3 font-semibold text-white transition hover:bg-[#9A3412]"
+      >
+        Voir toutes nos réalisations
+      </a>
+    </div>
+  </div>
+</section>

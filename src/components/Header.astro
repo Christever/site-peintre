@@ -1,16 +1,81 @@
 <header class="bg-[#FAFAF9] shadow-sm">
-  <div class="mx-auto flex max-w-7xl items-center justify-between px-6 py-4">
-    <a
-      href="/"
-      class="text-xl font-bold text-[#1C1917] transition hover:text-[#C2410C]"
-    >
-      MS Peinture
-    </a>
+  <div class="mx-auto max-w-7xl px-8 py-4">
+    <div class="flex items-center justify-between">
+      <!-- Logo -->
+      <a
+        href="/"
+        class="text-xl font-bold text-[#1C1917] transition hover:text-[#C2410C]"
+      >
+        MS Peinture
+      </a>
 
-    <nav>
-      <ul class="flex items-center gap-6">
+      <!-- Navigation desktop -->
+      <nav class="hidden md:block">
+        <ul class="flex items-center gap-6">
+          <li>
+            <a href="/" class="text-[#57534E] transition hover:text-[#C2410C]">
+              Accueil
+            </a>
+          </li>
+
+          <li>
+            <a
+              href="/entreprise"
+              class="text-[#57534E] transition hover:text-[#C2410C]"
+            >
+              L'entreprise
+            </a>
+          </li>
+
+          <li>
+            <a
+              href="/prestations"
+              class="text-[#57534E] transition hover:text-[#C2410C]"
+            >
+              Prestations
+            </a>
+          </li>
+
+          <li>
+            <a
+              href="/realisations"
+              class="text-[#57534E] transition hover:text-[#C2410C]"
+            >
+              Réalisations
+            </a>
+          </li>
+
+          <li>
+            <a
+              href="/contact"
+              class="rounded-lg bg-[#C2410C] px-4 py-2 font-semibold text-white transition hover:bg-[#9A3412]"
+            >
+              Contact
+            </a>
+          </li>
+        </ul>
+      </nav>
+
+      <!-- Bouton menu mobile -->
+      <button
+        id="menu-button"
+        type="button"
+        class="rounded-lg p-2 text-[#1C1917] hover:bg-[#E7E5E4] md:hidden"
+        aria-label="Ouvrir le menu"
+        aria-expanded="false"
+      >
+        ☰
+      </button>
+    </div>
+
+    <!-- Navigation mobile -->
+    <nav id="mobile-menu" class="hidden md:hidden">
+      <ul class="mt-4 space-y-2 border-t border-[#E7E5E4] pt-4">
         <li>
-          <a href="/" class="text-[#57534E] transition hover:text-[#C2410C]">
+          <a
+            href="/"
+            class="block rounded-lg px-3 py-2 text-[#57534E] transition hover:bg-[#FFF7ED] hover:text-[#C2410C]"
+          >
             Accueil
           </a>
         </li>
@@ -18,7 +83,7 @@
         <li>
           <a
             href="/entreprise"
-            class="text-[#57534E] transition hover:text-[#C2410C]"
+            class="block rounded-lg px-3 py-2 text-[#57534E] transition hover:bg-[#FFF7ED] hover:text-[#C2410C]"
           >
             L'entreprise
           </a>
@@ -27,7 +92,7 @@
         <li>
           <a
             href="/prestations"
-            class="text-[#57534E] transition hover:text-[#C2410C]"
+            class="block rounded-lg px-3 py-2 text-[#57534E] transition hover:bg-[#FFF7ED] hover:text-[#C2410C]"
           >
             Prestations
           </a>
@@ -36,7 +101,7 @@
         <li>
           <a
             href="/realisations"
-            class="text-[#57534E] transition hover:text-[#C2410C]"
+            class="block rounded-lg px-3 py-2 text-[#57534E] transition hover:bg-[#FFF7ED] hover:text-[#C2410C]"
           >
             Réalisations
           </a>
@@ -45,7 +110,7 @@
         <li>
           <a
             href="/contact"
-            class="rounded-lg bg-[#C2410C] px-4 py-2 font-semibold text-white transition hover:bg-[#9A3412]"
+            class="block rounded-lg bg-[#C2410C] px-3 py-2 font-semibold text-white transition hover:bg-[#9A3412]"
           >
             Contact
           </a>
@@ -54,3 +119,12 @@
     </nav>
   </div>
 </header>
+
+<script>
+  const menuButton = document.querySelector("#menu-button"); const mobileMenu =
+  document.querySelector("#mobile-menu"); menuButton?.addEventListener("click",
+  () => { mobileMenu?.classList.toggle("hidden"); const isOpen =
+  !mobileMenu?.classList.contains("hidden");
+  menuButton?.setAttribute("aria-expanded", String(isOpen));
+  menuButton?.setAttribute( "aria-label", isOpen ? "Fermer le menu" : "Ouvrir le menu" ); });
+</script>

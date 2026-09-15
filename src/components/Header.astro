@@ -1,9 +1,12 @@
+---
+import { routes } from "@/routes/Routes";
+---
 <header class="bg-[#FAFAF9] shadow-sm">
   <div class="mx-auto max-w-7xl px-8 py-4">
     <div class="flex items-center justify-between">
       <!-- Logo -->
       <a
-        href="/"
+        href={routes.accueil}
         class="text-xl font-bold text-[#1C1917] transition hover:text-[#C2410C]"
       >
         MS Peinture
@@ -13,14 +16,14 @@
       <nav class="hidden md:block">
         <ul class="flex items-center gap-6">
           <li>
-            <a href="/" class="text-[#57534E] transition hover:text-[#C2410C]">
+            <a href={routes.accueil} class="text-[#57534E] transition hover:text-[#C2410C]">
               Accueil
             </a>
           </li>
 
           <li>
             <a
-              href="/entreprise"
+              href={routes.entreprise}
               class="text-[#57534E] transition hover:text-[#C2410C]"
             >
               L'entreprise
@@ -29,7 +32,7 @@
 
           <li>
             <a
-              href="/prestations"
+              href={routes.prestations}
               class="text-[#57534E] transition hover:text-[#C2410C]"
             >
               Prestations
@@ -38,7 +41,7 @@
 
           <li>
             <a
-              href="/realisations"
+              href={routes.realisations}
               class="text-[#57534E] transition hover:text-[#C2410C]"
             >
               Réalisations
@@ -47,7 +50,7 @@
 
           <li>
             <a
-              href="/contact"
+              href={routes.contact}
               class="rounded-lg bg-[#C2410C] px-4 py-2 font-semibold text-white transition hover:bg-[#9A3412]"
             >
               Contact
@@ -73,7 +76,7 @@
       <ul class="mt-4 space-y-2 border-t border-[#E7E5E4] pt-4">
         <li>
           <a
-            href="/"
+            href={routes.accueil}
             class="block rounded-lg px-3 py-2 text-[#57534E] transition hover:bg-[#FFF7ED] hover:text-[#C2410C]"
           >
             Accueil
@@ -82,7 +85,7 @@
 
         <li>
           <a
-            href="/entreprise"
+            href={routes.entreprise}
             class="block rounded-lg px-3 py-2 text-[#57534E] transition hover:bg-[#FFF7ED] hover:text-[#C2410C]"
           >
             L'entreprise
@@ -91,7 +94,7 @@
 
         <li>
           <a
-            href="/prestations"
+            href={routes.prestations}
             class="block rounded-lg px-3 py-2 text-[#57534E] transition hover:bg-[#FFF7ED] hover:text-[#C2410C]"
           >
             Prestations
@@ -100,7 +103,7 @@
 
         <li>
           <a
-            href="/realisations"
+            href={routes.realisations}
             class="block rounded-lg px-3 py-2 text-[#57534E] transition hover:bg-[#FFF7ED] hover:text-[#C2410C]"
           >
             Réalisations
@@ -109,7 +112,7 @@
 
         <li>
           <a
-            href="/contact"
+            href={routes.contact}
             class="block rounded-lg bg-[#C2410C] px-3 py-2 font-semibold text-white transition hover:bg-[#9A3412]"
           >
             Contact

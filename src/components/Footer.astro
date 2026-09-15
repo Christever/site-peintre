@@ -1,4 +1,6 @@
-
+---
+import { routes } from "@/routes/Routes";
+---
 <footer class=" mt-8 border-t border-[#44403C] bg-[#0F0E0D] text-[#D6D3D1]">
     <div class="mx-auto max-w-7xl px-8 py-12">
         <div class="grid gap-10 md:grid-cols-3">
@@ -22,7 +24,7 @@
                 <ul class="mt-4 space-y-2">
                     <li>
                         <a
-                            href="/"
+                            href={routes.accueil}
                             class="transition hover:text-[#FB923C]"
                         >
                             Accueil
@@ -31,7 +33,7 @@
 
                     <li>
                         <a
-                            href="/entreprise"
+                            href={routes.entreprise}
                             class="transition hover:text-[#FB923C]"
                         >
                             L'entreprise
@@ -40,7 +42,7 @@
 
                     <li>
                         <a
-                            href="/prestations"
+                            href={routes.prestations}
                             class="transition hover:text-[#FB923C]"
                         >
                             Prestations
@@ -49,7 +51,7 @@
 
                     <li>
                         <a
-                            href="/realisations"
+                            href={routes.realisations}
                             class="transition hover:text-[#FB923C]"
                         >
                             Réalisations
@@ -58,7 +60,7 @@
 
                     <li>
                         <a
-                            href="/contact"
+                            href={routes.contact}
                             class="transition hover:text-[#FB923C]"
                         >
                             Contact
@@ -78,7 +80,7 @@
                 </p>
 
                 <a
-                    href="/contact"
+                    href={routes.contact}
                     class="mt-4 inline-block font-semibold text-[#FB923C] transition hover:text-[#FDBA74]"
                 >
                     Nous contacter →

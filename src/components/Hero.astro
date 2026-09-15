@@ -1,3 +1,7 @@
+---
+import { routes } from "@/routes/Routes";
+---
+
 <section class="bg-[#1C1917] text-white">
   <div class="mx-auto max-w-7xl px-8">
     <div class="py-24 lg:py-32">
@@ -23,14 +27,14 @@
 
         <div class="mt-8 flex flex-wrap gap-4">
           <a
-            href="/contact"
+            href={routes.contact}
             class="rounded-lg bg-[#C2410C] px-6 py-3 font-semibold text-white shadow-sm transition hover:bg-[#9A3412]"
           >
             Demander un devis
           </a>
 
           <a
-            href="/prestations"
+            href={routes.prestations}
             class="rounded-lg border border-[#57534E] px-6 py-3 font-semibold text-white transition hover:bg-[#292524]"
           >
             Découvrir nos prestations

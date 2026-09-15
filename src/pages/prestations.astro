@@ -1,0 +1,270 @@
+---
+import Layout from "@/layouts/Layout.astro";
+import { routes } from "@/routes/Routes";
+---
+
+<Layout title="Prestations - MS Peinture">
+    <main>
+        <!-- Introduction -->
+        <section class="bg-[#1C1917] py-20 text-white">
+            <div class="mx-auto max-w-4xl px-8 text-center">
+                <p
+                    class="text-sm font-semibold uppercase tracking-widest text-[#FDBA74]"
+                >
+                    Nos prestations
+                </p>
+
+                <h1 class="mt-3 text-4xl font-bold tracking-tight sm:text-5xl">
+                    Des solutions pour vos projets
+                </h1>
+
+                <p
+                    class="mx-auto mt-6 max-w-2xl text-lg leading-8 text-[#D6D3D1]"
+                >
+                    Peinture, papier peint ou revêtements de sol : MS Peinture
+                    vous accompagne dans vos projets de rénovation à Bédarieux
+                    et ses alentours.
+                </p>
+            </div>
+        </section>
+
+        <!-- Prestations -->
+        <section class="bg-[#FAFAF9] py-20">
+            <div class="mx-auto max-w-6xl px-8">
+                <div class="space-y-8">
+
+                    <!-- Peinture intérieure -->
+                    <article
+                        class="rounded-2xl bg-white p-8 shadow-sm ring-1 ring-[#E7E5E4] lg:p-10"
+                    >
+                        <div class="grid gap-8 lg:grid-cols-3 lg:items-start">
+                            <div>
+                                <div
+                                    class="flex h-12 w-12 items-center justify-center rounded-xl bg-[#FFF7ED] text-2xl text-[#C2410C]"
+                                >
+                                    🎨
+                                </div>
+
+                                <h2
+                                    class="mt-5 text-2xl font-bold text-[#1C1917]"
+                                >
+                                    Peinture intérieure
+                                </h2>
+                            </div>
+
+                            <div class="lg:col-span-2">
+                                <p class="leading-8 text-[#57534E]">
+                                    Donnez une nouvelle vie à vos pièces grâce
+                                    à une peinture adaptée à vos envies et à
+                                    votre intérieur. Murs, plafonds ou boiseries,
+                                    nous intervenons sur différents supports
+                                    pour obtenir un résultat propre et soigné.
+                                </p>
+
+                                <ul
+                                    class="mt-6 grid gap-3 sm:grid-cols-2"
+                                >
+                                    <li class="text-[#57534E]">
+                                        <span class="text-[#C2410C]">✓</span>
+                                        Murs et plafonds
+                                    </li>
+                                    <li class="text-[#57534E]">
+                                        <span class="text-[#C2410C]">✓</span>
+                                        Boiseries
+                                    </li>
+                                    <li class="text-[#57534E]">
+                                        <span class="text-[#C2410C]">✓</span>
+                                        Préparation des supports
+                                    </li>
+                                    <li class="text-[#57534E]">
+                                        <span class="text-[#C2410C]">✓</span>
+                                        Finitions soignées
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Peinture extérieure -->
+                    <article
+                        class="rounded-2xl bg-white p-8 shadow-sm ring-1 ring-[#E7E5E4] lg:p-10"
+                    >
+                        <div class="grid gap-8 lg:grid-cols-3 lg:items-start">
+                            <div>
+                                <div
+                                    class="flex h-12 w-12 items-center justify-center rounded-xl bg-[#FFF7ED] text-2xl text-[#C2410C]"
+                                >
+                                    🏠
+                                </div>
+
+                                <h2
+                                    class="mt-5 text-2xl font-bold text-[#1C1917]"
+                                >
+                                    Peinture extérieure
+                                </h2>
+                            </div>
+
+                            <div class="lg:col-span-2">
+                                <p class="leading-8 text-[#57534E]">
+                                    Protégez et embellissez vos extérieurs avec
+                                    une peinture adaptée aux contraintes du
+                                    bâtiment et aux conditions climatiques.
+                                    Façades, volets ou autres éléments
+                                    extérieurs peuvent retrouver une nouvelle
+                                    apparence.
+                                </p>
+
+                                <ul
+                                    class="mt-6 grid gap-3 sm:grid-cols-2"
+                                >
+                                    <li class="text-[#57534E]">
+                                        <span class="text-[#C2410C]">✓</span>
+                                        Façades
+                                    </li>
+                                    <li class="text-[#57534E]">
+                                        <span class="text-[#C2410C]">✓</span>
+                                        Volets
+                                    </li>
+                                    <li class="text-[#57534E]">
+                                        <span class="text-[#C2410C]">✓</span>
+                                        Préparation des surfaces
+                                    </li>
+                                    <li class="text-[#57534E]">
+                                        <span class="text-[#C2410C]">✓</span>
+                                        Protection et finition
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Papier peint -->
+                    <article
+                        class="rounded-2xl bg-white p-8 shadow-sm ring-1 ring-[#E7E5E4] lg:p-10"
+                    >
+                        <div class="grid gap-8 lg:grid-cols-3 lg:items-start">
+                            <div>
+                                <div
+                                    class="flex h-12 w-12 items-center justify-center rounded-xl bg-[#FFF7ED] text-2xl text-[#C2410C]"
+                                >
+                                    🧱
+                                </div>
+
+                                <h2
+                                    class="mt-5 text-2xl font-bold text-[#1C1917]"
+                                >
+                                    Pose de papier peint
+                                </h2>
+                            </div>
+
+                            <div class="lg:col-span-2">
+                                <p class="leading-8 text-[#57534E]">
+                                    Apportez du caractère à votre intérieur avec
+                                    la pose de papier peint. Nous préparons les
+                                    supports et réalisons une pose précise pour
+                                    mettre en valeur vos murs et vos motifs.
+                                </p>
+
+                                <ul
+                                    class="mt-6 grid gap-3 sm:grid-cols-2"
+                                >
+                                    <li class="text-[#57534E]">
+                                        <span class="text-[#C2410C]">✓</span>
+                                        Préparation des murs
+                                    </li>
+                                    <li class="text-[#57534E]">
+                                        <span class="text-[#C2410C]">✓</span>
+                                        Pose de papier peint
+                                    </li>
+                                    <li class="text-[#57534E]">
+                                        <span class="text-[#C2410C]">✓</span>
+                                        Raccords précis
+                                    </li>
+                                    <li class="text-[#57534E]">
+                                        <span class="text-[#C2410C]">✓</span>
+                                        Finitions
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Revêtements de sol -->
+                    <article
+                        class="rounded-2xl bg-white p-8 shadow-sm ring-1 ring-[#E7E5E4] lg:p-10"
+                    >
+                        <div class="grid gap-8 lg:grid-cols-3 lg:items-start">
+                            <div>
+                                <div
+                                    class="flex h-12 w-12 items-center justify-center rounded-xl bg-[#FFF7ED] text-2xl text-[#C2410C]"
+                                >
+                                    🪵
+                                </div>
+
+                                <h2
+                                    class="mt-5 text-2xl font-bold text-[#1C1917]"
+                                >
+                                    Revêtements de sol
+                                </h2>
+                            </div>
+
+                            <div class="lg:col-span-2">
+                                <p class="leading-8 text-[#57534E]">
+                                    Complétez votre rénovation avec un
+                                    revêtement de sol adapté à votre pièce et
+                                    à votre usage. Nous vous accompagnons dans
+                                    le choix de la solution et dans sa mise en
+                                    œuvre.
+                                </p>
+
+                                <ul
+                                    class="mt-6 grid gap-3 sm:grid-cols-2"
+                                >
+                                    <li class="text-[#57534E]">
+                                        <span class="text-[#C2410C]">✓</span>
+                                        Préparation du support
+                                    </li>
+                                    <li class="text-[#57534E]">
+                                        <span class="text-[#C2410C]">✓</span>
+                                        Pose de revêtements
+                                    </li>
+                                    <li class="text-[#57534E]">
+                                        <span class="text-[#C2410C]">✓</span>
+                                        Conseils sur les solutions
+                                    </li>
+                                    <li class="text-[#57534E]">
+                                        <span class="text-[#C2410C]">✓</span>
+                                        Finitions soignées
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </article>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA -->
+        <section class="bg-[#1C1917] py-16 text-white">
+            <div class="mx-auto max-w-4xl px-8 text-center">
+                <h2 class="text-3xl font-bold tracking-tight">
+                    Vous avez un projet ?
+                </h2>
+
+                <p class="mx-auto mt-4 max-w-2xl text-[#D6D3D1]">
+                    Échangeons sur vos besoins et préparons ensemble votre
+                    projet.
+                </p>
+
+                <a
+                    href={routes.contact}
+                    class="mt-8 inline-flex rounded-lg bg-[#C2410C] px-6 py-3 font-semibold text-white transition hover:bg-[#9A3412]"
+                >
+                    Demander un devis
+                </a>
+            </div>
+        </section>
+    </main>
+</Layout>
+

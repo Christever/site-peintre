@@ -2,6 +2,7 @@
 import photo01 from "@/assets/images/realisations/hero-peinture.webp"
 import photo02 from "@/assets/images/realisations/peinture_ext.webp"
 import photo3 from "@/assets/images/realisations/hero-papier.webp"
+import { routes } from "@/routes/Routes";
 ---
 <section class="bg-[#FAFAF9] py-20">
   <div class="mx-auto max-w-7xl px-8">
@@ -86,7 +87,7 @@ import photo3 from "@/assets/images/realisations/hero-papier.webp"
 
     <div class="mt-10 text-center">
       <a
-        href="/realisations"
+        href={routes.realisations}
         class="inline-flex rounded-lg bg-[#C2410C] px-6 py-3 font-semibold text-white transition hover:bg-[#9A3412]"
       >
         Voir toutes nos réalisations

@@ -1,3 +1,7 @@
+---
+import { routes } from "@/routes/Routes";
+---
+
 <section class="bg-[#1C1917] py-20 text-white">
   <div class="mx-auto max-w-4xl px-8 text-center">
     <p class="text-sm font-semibold uppercase tracking-widest text-[#FDBA74]">
@@ -15,7 +19,7 @@
 
     <div class="mt-8">
       <a
-        href="/contact"
+        href={routes.contact}
         class="inline-flex rounded-lg bg-[#C2410C] px-6 py-3 font-semibold text-white shadow-sm transition hover:bg-[#9A3412]"
       >
         Demander un devis

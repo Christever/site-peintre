@@ -1,5 +1,6 @@
 ---
 import { routes } from "@/routes/Routes";
+import  {constants}  from "@/utils/constants";
 ---
 <footer class=" mt-8 border-t border-[#44403C] bg-[#0F0E0D] text-[#D6D3D1]">
     <div class="mx-auto max-w-7xl px-8 py-12">
@@ -10,9 +11,9 @@ import { routes } from "@/routes/Routes";
                 </h2>
 
                 <p class="mt-3 max-w-sm leading-7 text-[#A8A29E]">
-                    Artisan peintre à Bédarieux et ses alentours.
-                    Peinture intérieure et extérieure, papier peint et
-                    revêtements de sol.
+                    {constants.title}
+                    {constants.ville}
+                    {constants.description}
                 </p>
             </div>
 

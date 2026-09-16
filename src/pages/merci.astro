@@ -1,0 +1,35 @@
+---
+import Layout from "@/layouts/Layout.astro";
+import { routes } from "@/routes/Routes";
+---
+
+<Layout title="Merci - MS Peinture">
+    <main>
+        <section class="bg-[#1C1917] py-24 text-white">
+            <div class="mx-auto max-w-3xl px-8 text-center">
+                <div
+                    class="mx-auto flex h-16 w-16 items-center justify-center rounded-full bg-[#C2410C] text-2xl"
+                    aria-hidden="true"
+                >
+                    ✓
+                </div>
+
+                <h1 class="mt-8 text-4xl font-bold tracking-tight">
+                    Merci pour votre demande
+                </h1>
+
+                <p class="mx-auto mt-6 max-w-2xl text-lg leading-8 text-[#D6D3D1]">
+                    Votre message a bien été transmis à MS Peinture.
+                    Nous reviendrons vers vous dès que possible.
+                </p>
+
+                <a
+                    href={routes.accueil}
+                    class="mt-10 inline-flex rounded-lg bg-[#C2410C] px-6 py-3 font-semibold text-white transition hover:bg-[#9A3412]"
+                >
+                    Retour à l'accueil
+                </a>
+            </div>
+        </section>
+    </main>
+</Layout>

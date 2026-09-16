@@ -90,4 +90,5 @@ mail(
     implode("\r\n", $confirmationHeaders)
 );
 
-echo "Votre demande a bien été envoyée.";
+header("Location: /mspeinture/merci/");
+exit;

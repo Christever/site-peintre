@@ -25,4 +25,5 @@ pnpm-debug.log*
 
 # Autre
 mail.txt
+dist/
 

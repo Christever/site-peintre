@@ -5,16 +5,17 @@ import { fileURLToPath } from "node:url";
 import sitemap from "@astrojs/sitemap";
 
 export default defineConfig({
-  base: "/mspeinture",
+    site: "https://www.steverlynck.fr",
+    base: "/mspeinture",
 
-  vite: {
-      plugins: [tailwindcss()],
-      resolve: {
-          alias: {
-              "@": fileURLToPath(new URL("./src", import.meta.url)),
-          },
-      },
-  },
+    vite: {
+        plugins: [tailwindcss()],
+        resolve: {
+            alias: {
+                "@": fileURLToPath(new URL("./src", import.meta.url)),
+            },
+        },
+    },
 
-  integrations: [sitemap()],
+    integrations: [sitemap()],
 });

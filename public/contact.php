@@ -10,6 +10,12 @@ $prenom = trim($_POST["prenom"] ?? "");
 $email = trim($_POST["email"] ?? "");
 $telephone = trim($_POST["telephone"] ?? "");
 $message = trim($_POST["message"] ?? "");
+$website = trim($_POST["website"] ?? "");
+
+if ($website !== "") {
+    http_response_code(400);
+    exit("Requête invalide.");
+}
 
 // Validation
 if ($nom === "" || $prenom === "" || $email === "" || $message === "") {

@@ -224,6 +224,21 @@ import Layout from "@/layouts/Layout.astro";
                                 ></textarea>
                             </div>
 
+                            <!-- Honeypot anti-spam -->
+                            <div class="hidden" aria-hidden="true">
+                                <label for="website">
+                                    Ne pas remplir ce champ
+                                </label>
+
+                                <input
+                                    id="website"
+                                    name="website"
+                                    type="text"
+                                    tabindex="-1"
+                                    autocomplete="off"
+                                />
+                            </div>
+
                             <!-- Bouton -->
                             <button
                                 type="submit"

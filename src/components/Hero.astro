@@ -1,5 +1,6 @@
 ---
 import { routes } from "@/routes/Routes";
+import { constants } from "@/utils/constants";
 ---
 
 <section class="bg-[#1C1917] text-white">
@@ -17,12 +18,12 @@ import { routes } from "@/routes/Routes";
         </h1>
 
         <p class="mt-6 text-xl leading-8 text-[#E7E5E4]">
-          Votre artisan peintre à Bédarieux et ses alentours.
+
+          Votre {constants.title} {constants.ville}.
         </p>
 
         <p class="mt-4 max-w-2xl text-lg leading-8 text-[#A8A29E]">
-          Peinture intérieure et extérieure, pose de papier peint et revêtements
-          de sol pour vos projets de rénovation.
+          {constants.description}
         </p>
 
         <div class="mt-8 flex flex-wrap gap-4">

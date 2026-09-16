@@ -6,4 +6,7 @@ export const routes = {
   prestations: url("prestations"),
   realisations: url("realisations"),
   contact: url("contact"),
+  mentionsLegales: url("mentions-legales"),
+  confidentialite: url("confidentialite"),
+  cgv: url("cgv"),
 };

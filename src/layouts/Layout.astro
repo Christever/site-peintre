@@ -37,6 +37,29 @@ import Footer from "@/components/Footer.astro"
         <meta name="twitter:image" content={`${Astro.site}og-image.webp`} />
 
         <title>{title}</title>
+
+        <script type="application/ld+json" set:html={JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "LocalBusiness",
+            "name": "MS PEINTURE",
+            "url": "https://www.steverlynck.fr/mspeinture/",
+            "logo": "https://www.steverlynck.fr/mspeinture/logo-ms-peinture.jpg",
+            "image": "https://www.steverlynck.fr/mspeinture/og-image.webp",
+            "telephone": "+33787982071",
+            "email": "mspeinture-contact@steverlynck.fr",
+            "address": {
+                "@type": "PostalAddress",
+                "streetAddress": "7 avenue Abbé Tarroux",
+                "postalCode": "34600",
+                "addressLocality": "Bédarieux",
+                "addressCountry": "FR"
+            },
+            "areaServed": {
+                "@type": "City",
+                "name": "Bédarieux"
+            },
+            "priceRange": "€€"
+        })} />
     </head>
 
     <body class="min-h-screen bg-slate-50 text-slate-900">
